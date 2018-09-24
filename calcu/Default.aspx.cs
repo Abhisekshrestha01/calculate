@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using addsubdivmul;
 using Addition;
+using addSub;
 
 namespace calcu
 {
@@ -21,17 +21,17 @@ namespace calcu
         {
             float x = float.Parse(txt_x.Text);
             float y = float.Parse(txt_y.Text);
-            int z = Convert.ToInt32(txt_z.Text);
+            float z = float.Parse(txt_z.Text);
             int a = Convert.ToInt32(txt_a.Text);
             int b = Convert.ToInt32(txt_b.Text);
             Adder obj = new Adder();
             float result1 = obj.Add(x, y);
-            addsub obj1 = new addsub();
-            float result1 = obj1.Addsub(result1, z);
+            SibstractionClass obj1 = new SibstractionClass();
+            result1 = obj1.SubRes(result1, z);
             addsubdiv obj2 = new addsubdiv();
-            float result1 = obj.Addsubdiv(result1, a);
+            result1 = obj.Addsubdiv(result1, a);
             addsubdivmul obj = new addsubdivmul();
-            float result1 = obj.Addsubdivmul(result1, b);
+            result1 = obj.Addsubdivmul(result1, b);
             Label6.Text = result1.ToString();
 
         }

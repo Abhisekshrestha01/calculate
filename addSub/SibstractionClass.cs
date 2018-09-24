@@ -8,8 +8,8 @@ namespace addSub
 {
     public class SibstractionClass
     {
-        public int SubRes(int addRes) {
-            return (addRes - 2);
+        public float SubRes(float addRes, float z) {
+            return (addRes - z);
         }
     }
 }
