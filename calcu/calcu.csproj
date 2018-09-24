@@ -223,6 +223,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Addition\Addition.csproj">
+      <Project>{e53f4c61-06ae-467f-a584-453ce6b579fe}</Project>
+      <Name>Addition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\addSub\addSub.csproj">
+      <Project>{c31b5230-38b2-404b-8ede-39aa2db61e5e}</Project>
+      <Name>addSub</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

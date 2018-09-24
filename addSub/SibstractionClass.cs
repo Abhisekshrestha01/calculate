@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Addition
+namespace addSub
 {
-    public class Adder
+    public class SibstractionClass
     {
-        public float Add(float a, float b)
-        {
-            return a + b;
+        public float SubRes(float addRes, float z) {
+            return (addRes - z);
         }
     }
 }
