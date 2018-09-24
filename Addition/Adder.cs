@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Addition
 {
-    class Adder
+    public class Adder
     {
         public float Add(float a, float b)
         {
