@@ -28,7 +28,7 @@ namespace calcu
             float result1 = obj.Add(x, y);
             SibstractionClass obj1 = new SibstractionClass();
             result1 = obj1.SubRes(result1, z);
-            addsubdiv obj2 = new addsubdiv();
+            addSubdiv obj2 = new addsubdiv();
             result1 = obj.Addsubdiv(result1, a);
             addsubdivmul obj = new addsubdivmul();
             result1 = obj.Addsubdivmul(result1, b);
